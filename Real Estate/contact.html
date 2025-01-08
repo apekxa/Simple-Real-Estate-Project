@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact- Real Estatet</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        header{
+            background: url('./luxury-modern-apartment-showcases-elegance-with-comfortable-illuminated-old-fashioned-decor-generated-by-artificial-intelligence.jpg');
+            margin-top: 50px;
+            height: 80vh;
+            width: 94%;
+            background-size: cover;
+            background-position: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 20px;
+            border-radius: 30px;
+        }
+        .first{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 30px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .logo{
+            margin-left:2% ;
+            margin-top: 2%;
+        }
+        .side{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+        }
+        .side a img{
+            width: 30px;
+            margin-top: 60%;
+        }
+        .opt1 ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 6%;
+            gap: 40px;
+        }
+        .list li a{
+            color: white;
+            text-decoration: none;
+        }
+        .list li a:hover{
+            color: rgb(148, 43, 43);
+        }
+        .word{
+            font-size: 2rem;
+            color: white;
+            margin-top: 10%;
+        }
+        .last img{
+            margin-top: 50px;
+            height: 100vh;
+            width: 94%;
+            background-size: cover;
+            background-position: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 20px;
+            border-radius: 30px;
+
+        }
+        .forms{
+            position: relative;
+            margin-top: -45%;
+            margin-left: 450px;
+            width: 800px;
+            font-size: 2rem;
+            background: #ffffff;
+            padding: 20px 40px;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .forms img{
+            margin-top: -10%;
+        }
+        .f1{
+            margin-top: -5%;
+            font-size: 1.2rem;
+            width:66%;
+            padding: 20px;
+        }
+        .f1 input, textarea{
+            width: 150%;
+            padding: 5px;
+            margin-bottom: 20px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid gray;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .cont h3{
+            font-size: 1.2rem;
+            padding-bottom:20px ;
+        }
+        dialog{
+            position: relative;
+            text-align: center;
+            border-radius: 20px;
+            border: none;
+            height: 50vh;
+            margin-top:-23%;
+            background-color: rgb(255, 255, 255);
+            font-size: 2rem;
+            margin-left: 450px;
+            width: 800px;
+        }
+        dialog img{
+            margin-top: -7%;
+        }
+        .forms1 h2{
+            font-size: 1.5rem;
+        }
+        .show-btn{
+            padding: 10px;
+            width: 200px;
+            font-size: 2rem;
+            border: none;
+            background-color: rgb(240, 228, 172);
+            margin-left: 750px;
+            margin-top: 10px;
+            transform: scale(0.9);
+            border-radius: 20px;
+        }
+        .close-btn{
+            padding: 10px;
+            width: 200px;
+            font-size: 2rem;
+            border: none;
+            background-color: rgb(240, 228, 172);
+            margin-left: 30px;
+            margin-top: 30%;
+            transform: scale(0.9);
+            border-radius: 20px;
+        }
+        .container{
+            width: 94%;
+            margin-top: 5%;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: rgba(244, 227, 149, 0.441);
+        }
+        .cards{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            gap: 10px;
+            margin-top: -5%;
+        }
+        .card1{
+            padding: 20px;
+            margin: 10px;
+            line-height: 1.2rem;
+        }
+        .card1 ul li{
+            padding: 10px;
+            text-align: justify;
+        }
+        .cont img{
+            margin-top: -15%;
+        }
+        .lastt{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30%;
+        }
+        .forms1{
+            width: 500px;
+            height: 95vh;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            font-size: 2rem;
+            padding: 20px 40px;
+            border: 2px solid black;
+            background-color: white;
+        }
+        .cont h3{
+            font-size: 1.6rem;
+        }
+        button{
+            padding: 10px;
+            margin: 20px;
+            border: none;
+            width: 80%;
+            font-size: 1.5rem;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            margin-left: 100px;
+        }
+        .infor{
+            font-size: 1.3rem;
+        }
+        .infor img{
+            margin-top: -20%;
+        }
+        .infor h3{
+            padding-bottom: 4px;
+        }
+        .infor h4{
+            padding-bottom: 5px;
+            font-size: 1.2em;
+        }
+        iframe{
+            width: 100%;
+            height: 90vh;
+        }
+        .side a img{
+            border-radius: 30px;
+        }
+        .side a img:hover{
+            box-shadow: 0 0 20px white;
+            border: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="first">
+            <div class="logo">
+                <img src="https://websitedemos.net/real-estate-company-04/wp-content/uploads/sites/1484/2023/07/site-logo.svg" alt="logo">
+            </div>
+            <div class="opt1">
+                <ul type="none" class="list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="property.html">Properties</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="side">
+                <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/3670/3670151.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+                <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+                <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/15015/15015967.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+                <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/2504/2504903.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+                <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/3536/3536445.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+                <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/17976/17976763.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+            </div>
+        </div>
+        <center class="word">
+            <h4>Contact Us</h4>
+            <br>
+            <h1>We're Just a Phone Call or <br>Message Away</h1>
+        </center>
+    </header>
+    <section>
+        <div class="container">
+            <div class="lastt">
+                <div class="infor">
+                    <h1>We are excited to connect <br> with you and assist you <br>with your real estate needs</h1>
+                    <img src="https://clipart-library.com/images/gTe5X6Bxc.png" alt="" width="200px">
+                    <h3>Phone</h3>
+                    <h4>91965756857</h4>
+                    <h3>Email</h3>
+                    <h4>test1@gmail.com</h4>
+                    <h3>Address</h3>
+                    <h4>A: 13 Fifth Avenue, Stirling, Scotland 574201</h4>
+                </div>
+                <div class="box">
+                    <div class="forms1">
+                        <center>
+                        <div class="cont">
+                            <h3>CONTACT US</h3>
+                            <h1>Schedule an Appointment</h1>
+                            <img src="https://clipart-library.com/images/gTe5X6Bxc.png" alt="" width="200px">
+                        </div>
+                        </center>
+                        <form class="f1">
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" required>
+                        
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email"required>
+            
+                            <label for="phone">Phone</label><br>
+                            <input type="tel" id="phone" name="phone" required>
+                        
+                            <label for="date">Schedule Date</label>
+                            <input type="date" id="date" name="date" required>
+                            <center>
+                                <button class="sub">Submit</button>
+                            </center>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4491.93774518232!2d-3.935704592187911!3d56.117985908784995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488857d73c437831%3A0xfbf01f3702d576ad!2sStirling%2C%20UK!5e0!3m2!1sen!2sin!4v1733309387682!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section>
+        <div class="last">
+            <img src="./armchair-green-living-room-with-copy-space.jpg" alt="">
+        </div> 
+        <div class="forms">
+            <center>
+                <br><br>
+            <div class="cont">
+                <h3>CONTACT US</h3>
+                <h1>Schedule an Appointment</h1>
+                <img src="https://clipart-library.com/images/gTe5X6Bxc.png" alt="" width="200px">
+            </div>
+            </center>
+            <form class="f1">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email"required>
+
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required>
+            
+                <label for="date">Schedule Date</label>
+                <input type="date" id="date" name="date" required>
+             </form>
+        </div>
+        <button class="show-btn" onclick="showdialog()">Submit</button>
+        <dialog id="popup">
+                <div class="forms1">
+                    <h2>Thanks for contacting us! We will be in touch with you shortly.</h2>
+                </div>
+                <button class="close-btn" onclick="closedialog()">Close</button>
+        </dialog>
+</section>
+<script>
+    const dialogtag=document.getElementById("popup");
+    function showdialog(){
+        dialogtag.show()
+    }
+    function closedialog(){
+        dialogtag.close()
+    }
+</script>
+
+<br><br><br><br><br><br>
+<section>
+    <div class="container">
+        <div class="cards">
+            <div class="card1">
+                <ul type="none">
+                    <li>
+                        <div class="logo">
+                            <img src="https://websitedemos.net/real-estate-company-04/wp-content/uploads/sites/1484/2023/07/footer-logo.svg" alt="logo">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="card1">
+                <ul type="none">
+                    <li><h1>About Us</h1></li>
+                    <li>At Real Estate, we pride ourselves on being a trusted and reputable name in the real estate industry with years of experience.</li>
+                </ul>
+            </div>
+            <div class="card1">
+                <ul type="none">
+                    <li><h1>Contact Info</h1></li>
+                    <li style="color: rgb(70, 70, 231);">13,Fifthe Avenue,New York, NY 101660 contact@info.com 555-345-4599</li>
+                </ul>
+            </div>
+            <div class="card1">
+                <ul type="none">
+                    <li><h1>Property Search</h1></li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque amet libero iusto dolores sequi facere quibusdam eligendi ipsum nesciunt tenetur maiores quo laborum debitis aliquid iure eaque sed, corrupti alias?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="first">
+        <p>Copyright © 2024 Real Estate Company</p>
+        <div class="side">
+            <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/3670/3670151.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+            <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+            <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/15015/15015967.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+            <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/2504/2504903.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+            <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/3536/3536445.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+            <a href="home.html"><img src="https://cdn-icons-png.freepik.com/256/17976/17976763.png?ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="twit"></a>
+        </div>
+    </div>
+</section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
